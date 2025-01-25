@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="ISO-8859-1">
+		<title>USER_SIGNUP_LOGIN</title>
+		<link rel = "stylesheet" href = "user.css">
+	</head>
+	<body> 
+		<div id = "btnsDiv">
+			<button id = "logBtn">LOGIN</button>
+			<button id = "signBtn">SIGN UP</button>
+		</div>
+		<div id = "logDiv" class = "formDiv">
+			<form action = "serv1">
+				<input type = "number" name = "number" placeHolder = "enter phone number"><br><br>
+				<input type = "password" name = "password" placeHolder = "enter password"><br><br><br>
+				<input type = "hidden" name = "work" value = "login">
+				<input type = "submit" name = "loginSubmit" value = "LOGIN">
+			</form>
+		</div>
+		<div id = "signUpDiv" class = "formDiv">
+			<form action = "serv1">
+				<input type = "text" name = "name" placeHolder = "enter name"><br><br>
+				<input type = "number" name = "number" placeHolder = "enter phone number"><br><br>
+				<input type = "password" name = "password" placeHolder = "enter password"><br><br>
+				<input type = "text" name = "passwordConfirm" placeHolder = "confirm password"><br><br><br>
+				<input type = "hidden" name = "work" value = "register">
+				<input type = "submit" name = "signUpSubmit" value = "SIGN UP">
+			</form>
+		</div>
+		<script src="user.js"></script>
+	</body>
+</html>

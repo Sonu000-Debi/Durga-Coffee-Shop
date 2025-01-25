@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Durga Coffee Shop</title>
+    <link rel="stylesheet" href="homePage.css">
+    
+
+	</head>
+	
+	<body>
+		<div id = "headingDiv">
+			<h3>WELCOME TO DURGA COFFEE SHOP</h3>
+		</div>
+		
+		<h5 id = "verHead">VERIFY YOUR SELF TO USE E-COFFEE SHOP WEBSITE AND ENJOY BY ORDERING VARIOUS TYPES OF COFFEE </h5>
+		<h2 id = "rerdHead">EXCITING CASHBACK IN EVERY ORDER !!</h2>
+
+		<div id="navigation">
+			<h5>Choose Your Catagory :: </h5>
+			<a href = "user.html" class="nav-link">CUSTOMER</a>
+			<button id="adminEnter">ADMIN</button>
+		</div>
+		
+		<div id = "description">
+			<h3>DESCRIPTION</h3>
+			<p>Welcome to Durga Coffee Shop, your one-stop destination for premium coffee! 
+            Indulge in a wide range of freshly brewed beverages and enjoy a seamless online ordering experience. 
+            Whether you're a coffee enthusiast or a business owner, we cater to all your needs with 
+            user-friendly features like secure login, real-time order tracking, and an intuitive admin dashboard. 
+            Taste the perfection in every sip, conveniently delivered to your doorstep!</p>
+		</div>
+
+		<div id = "logDiv" style="display: none;">
+			<form action = "serv1">
+				<input type = "number" name = "number" placeHolder = "enter phone number"><br><br>
+				<input type = "password" name = "password" placeHolder = "enter password"><br><br><br>
+				<input type = "hidden" name = "work" value = "loginAdmin">
+				<input type = "submit" value = "LOGIN">
+			</form>
+		</div>
+		
+		<script>
+			let adminBtn = document.querySelector("#adminEnter");
+			let navDiv = document.querySelector("#navigation");
+			let logDiv = document.querySelector("#logDiv");
+			let headDiv = document.querySelector("#headingDiv");
+			let descDiv = document.querySelector("#description");
+			let verHead = document.querySelector("#verHead");
+			let rerdHead = document.querySelector("#rerdHead");
+			
+			adminBtn.addEventListener('click', function () {
+			      // Change the content of the paragraph on button click
+			      navDiv.style.display = "none";
+			      headDiv.style.display = "none";
+			      descDiv.style.display = "none";
+			      verHead.style.display = "none";
+			      rerdHead.style.display = "none";
+			      logDiv.style.display = "block";
+			});  
+		
+		</script>
+		
+
+	</body>
+	
+</html>

@@ -1,0 +1,162 @@
+@charset "ISO-8859-1";
+#delCharge {
+	display: none;
+}
+#paymentDiv {
+	display: none;
+}
+.rerd {
+	display: none;
+}
+/* General Styling for the body */
+/* General reset and base styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Container for the page */
+#selectDiv, #paymentDiv {
+    width: 80%;
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Header Styling */
+h3, h4, h6 {
+    color: #333;
+}
+
+h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+h4 {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+#amountHeading {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+    color: #e77c4b;
+}
+
+/* Input and Button Styling */
+input[type="radio"] {
+    margin-right: 10px;
+}
+
+input[type="number"], input[type="text"], input[type="email"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #e77c4b;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #e5633e;
+    transform: scale(1.05);
+}
+
+a {
+    text-decoration: none;
+    color: #e77c4b;
+    font-size: 16px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Reward Points Section */
+.rerd {
+    display: none;
+}
+
+#rewardApply {
+    background-color: #3c8dbc;
+    transition: background-color 0.3s ease;
+}
+
+#rewardApply:hover {
+    background-color: #2a6f96;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+#selectDiv, #paymentDiv {
+    animation: fadeIn 1s ease-out;
+}
+
+/* Delivery Section */
+#delCharge {
+    font-size: 14px;
+    color: #666;
+}
+
+#payDelType {
+    color: #e77c4b;
+    font-weight: bold;
+}
+
+/* QR Code Styling */
+#paymentDiv img {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+    
+    #selectDiv, #paymentDiv {
+        width: 95%;
+    }
+
+    button {
+        width: 100%;
+    }
+}

@@ -1,0 +1,128 @@
+/* Initially hide sections */
+#orderBtnDiv, #addDelBtnDiv, #addCoffee {
+    display: none;
+}
+
+/* General Styles */
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f1f3f6;
+}
+
+h3, h5, h2 {
+    text-align: center;
+    color: #333;
+}
+
+/* Button Styles */
+button {
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+#orderBtn, #pricingBtn, #addDeleteBtn, #stocksBtn, #addBtn, #delete {
+    background: #2874f0;
+}
+
+#orderBtn:hover, #pricingBtn:hover, #addDeleteBtn:hover, #stocksBtn:hover, #addBtn:hover, #delete:hover {
+    background: #1a55b5;
+}
+
+/* Sub Buttons Styles */
+#orderBtnDiv button, #addDelBtnDiv button {
+    padding: 8px 15px;
+    font-size: 14px;
+    margin: 5px;
+    background: #ff9f00;
+    border-radius: 5px;
+}
+
+#orderBtnDiv button:hover, #addDelBtnDiv button:hover {
+    background: #ff7700;
+}
+
+/* Form Styles */
+form {
+    display: inline-block;
+    margin: 10px;
+}
+
+input[type="text"], input[type="number"] {
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: calc(100% - 22px);
+}
+
+input[type="submit"] {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background: #2874f0;
+    color: white;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background: #1a55b5;
+}
+
+/* Div Styles */
+#homeBtnsDiv, #orderBtnDiv, #addDelBtnDiv, #addCoffee {
+    padding: 20px;
+    margin: 20px auto;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1.5s;
+}
+
+#addCoffee a {
+    display: block;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: #2874f0;
+    font-weight: bold;
+}
+
+#addCoffee a:hover {
+    text-decoration: underline;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes scaleUp {
+    from {
+        transform: scale(0.9);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
